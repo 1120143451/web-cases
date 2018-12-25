@@ -1,0 +1,282 @@
+/*首页css*/
+.jd {
+    height: 480px;
+    position: relative;
+}
+.jd-inner {
+    height: 480px;
+    position: relative;
+    z-index: 1;
+}
+.ad {
+    height: 480px;
+    background: url("../images/bg.png") no-repeat top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /*一定要写 position 会转换成行内块 根据内容多少定宽度*/
+}
+.ad a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.jd-col1 {
+    width: 190px;
+    height: 465px;
+    background-color: #6e6568;
+    float: left;
+    padding-top: 15px;
+}
+.jd-col1 li {
+    padding-left: 10px;
+    height: 28px;
+    line-height: 28px;
+}
+.jd-col1 li:hover {
+    background-color: #999395;
+}
+.jd-col1 li a {
+    color: #ffffff;
+    font-size: 14px;
+}
+.jd-col1 li a:hover {
+    color: #c81623;
+}
+.cate_menu_line {
+    padding: 0 2px;
+    font-size: 12px;
+    color: #ffffff;
+}
+.jd-col2 {
+    width: 790px;
+    height: 480px;
+    float: left;
+    margin-left: 10px;
+}
+.jd-col2-hd {
+    height: 340px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.arr-l, .arr-r {
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 22px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+}
+.arr-l {
+    left: 0;
+    padding-left: 8px;
+}
+.arr-r {
+    right: 0;
+    padding-right: 8px;
+}
+.jd-col2-hd ol {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -90px;
+    width: 160px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.jd-col2-hd ol li{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    float: left;
+    margin: 4px 4px;
+    cursor: pointer;
+}
+.jd-col2-hd .current {
+    background: #f10215;
+}
+.jd-col2-bd div {
+    width: 390px;
+    height: 130px;
+    float: left;
+}
+.jd-col2-bd-l {
+    margin-right: 10px;
+}
+.jd-col2-bd img {
+    width: 100%;
+}
+.jd-col3 {
+    width: 190px;
+    height: 480px;
+    float: right;
+}
+.jd-col3-user {
+    height: 95px;
+    padding: 20px 15px 0;
+}
+.user-info {
+    height: 40px;
+    padding-left: 54px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #888888;
+    position: relative;
+}
+.user-info a {
+    color: #666666;
+}
+.user-info a:hover {
+    color: #c81623;
+}
+.user_avata {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user_avata img {
+    height: auto;
+    width: 100%;
+}
+.user-profit {
+    margin-top: 14px;
+}
+.user-profit a {
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    border: 2px solid #e01222;
+    font-size: 12px;
+    color: #e01222;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 3px;
+}
+.user-profit a:hover {
+    color: #fff;
+    background: #e01222;
+}
+.jd-col3-news {
+    height: 149px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 15px 0;
+}
+.jd_tab_header {
+    border-bottom: 1px solid #ccc;
+    padding: 3px 0;
+    position: relative;
+}
+.jd_tab_header a {
+    font-size: 12px;
+    color: #333333;
+    margin: 0 5px;
+}
+.news_first {
+    border-right: 1px solid #cccccc;
+    padding-right: 10px;
+}
+.news_last {}
+.jd_tab_header .news_more {
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+.news_more:hover {
+    color: #c81623;
+}
+.news_tab_active {
+    width: 28px;
+    height: 2px;
+    background: #db192b;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+.jd_tab_content {
+    padding-top: 8px;
+}
+.jd_tab_content a {
+    font-size: 12px;
+    color: #999999;
+    line-height: 22px;
+}
+.jd-col3-service {
+    height: 209px;
+    overflow: hidden;
+}
+.jd-col3-service ul{
+    width: 195px;
+}
+.jd-col3-service li {
+    width: 47px;
+    height: 69px;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.jd-col3-service li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.jd-col3-service i {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 15px auto 8px;
+    background: url('../images/sprite_fs@1x.png') no-repeat;
+}
+.jd-col3-service .service_ico_call {
+    background-position: 0 -88px;
+}
+.jd-col3-service .service_ico_airtickets {
+    background-position: 0 -44px;
+}
+.jd-col3-service .service_ico_hotel {
+    background-position: -44px -88px;
+}
+.jd-col3-service .service_ico_game {
+    background-position: -88px 0;
+}
+.jd-col3-service .service_ico_enterprise {
+    background-position: -88px -44px;
+}
+.jd-col3-service .service_ico_movie {
+    background-position: -44px -44px;
+}
+.jd-col3-service .service_ico_train {
+    background-position: -88px -88px;
+}
+.jd-col3-service .service_ico_crowdfunding {
+    background-position: -132px 0;
+}
+.jd-col3-service .service_ico_finances {
+    background-position: -132px -44px;
+}
+.jd-col3-service .service_ico_gift {
+    background-position: -132px -88px;
+}
+.jd-col3-service .service_ico_white {
+    background-position: -44px 0;
+}
+.jd-col3-service p {
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+}
+.jd-col3-service p:hover {
+    color: #e01222;
+}
