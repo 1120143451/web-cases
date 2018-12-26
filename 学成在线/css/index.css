@@ -1,0 +1,66 @@
+body {
+    background-color: #f3f5f7;
+}
+header {
+    width: 1300px;
+    height: 100px;
+    background-color: #fc1;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.logo {
+    width: 195px;
+    height: 42px;
+    float: left;
+    background: #449fdb;
+}
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("./a.png") no-repeat;
+    text-indent: -999px; /*隐藏链接里面的文字*/
+    overflow: hidden;  /*这句话加上想必也是极好的*/
+}
+nav {
+    float: left;
+    margin-left: 20px;
+}
+nav li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 25px;
+}
+nav li a {
+    display: block;
+    height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+}
+nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+.search {
+    width: 410px;
+    height: 40px;
+    background-color: green;
+    float: left;
+    margin-left: 50px;
+}
+.search input {
+    width: 361px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    outline: none; /*轮廓线*/
+    padding-left: 10px;
+    float: left;
+}
+.search button {
+    width: 49px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    float: left;
+    background: url('../image/b.png') no-repeat;
+}

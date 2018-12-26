@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/前端综合案例.iml" filepath="$PROJECT_DIR$/.idea/前端综合案例.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/web-cases.iml" filepath="$PROJECT_DIR$/.idea/web-cases.iml" />
     </modules>
   </component>
 </project>
