@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>京东移动站-首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<!--
+1.最大宽度设置成了640px
+2.设计稿psd的尺寸就是640px
+3.目的：当设备的尺寸比设计稿不至于失真
+4.640px的尺寸设计稿的原因：根据当前主要流行的设备尺寸有关系iphone4,4s 尺寸320px
+5.750px的设计稿：参考原型iphone6 尺寸375px
+6.最小宽度320px  保证最小的宽度320px不让页面错乱
+-->
+<body>
+<div class="jd_container">
+    <!-- 顶部搜索 -->
+    <header class="jd_search">
+        <div class="jd_search_box">
+            <a href="" class="icon_logo"></a>
+            <form action="">
+                <span class="icon_search"></span>
+                <input type="search" placeholder="占位符">
+            </form>
+            <a href="" class="login">登录</a>
+        </div>
+    </header>
+    <!-- 轮播图 -->
+    <div class="jd_banner">
+        <ul>
+            <li><a href="#"><img src="images/l8.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l4.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l6.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l7.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l8.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l1.jpg" alt=""></a></li>
+        </ul>
+        <ul>
+            <li class="now"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- 导航栏 -->
+    <div class="jd_nav">
+        <ul class="clearFix">
+            <li>
+                <a href="">
+                    <img src="images/nav0.png" alt="">
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/nav1.png" alt="">
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/nav2.png" alt="">
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/nav3.png" alt="">
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/nav4.png" alt="">
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/nav5.png" alt="">
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/nav6.png" alt="">
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/nav7.png" alt="">
+                    <p>分类</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 产品区块 -->
+    <div class="jd_product">
+        <section class="jd_product_box">
+            <div class="tit nb"></div>
+            <div class="con"></div>
+        </section>
+        <section class="jd_product_box">
+            <div class="tit"><h3>京东超市</h3></div>
+            <div class="con"></div>
+        </section>
+        <section class="jd_product_box">
+            <div class="tit"><h3>京东自营</h3></div>
+            <div class="con"></div>
+        </section>
+        <section class="jd_product_box">
+            <div class="tit"><h3>京东热门</h3></div>
+            <div class="con"></div>
+        </section>
+    </div>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
