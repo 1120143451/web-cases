@@ -4,7 +4,6 @@ body {
 header {
     width: 1300px;
     height: 100px;
-    background-color: #fc1;
     margin: 0 auto;
     padding-top: 30px;
 }
@@ -12,13 +11,12 @@ header {
     width: 195px;
     height: 42px;
     float: left;
-    background: #449fdb;
 }
 .logo a {
     display: block;
-    width: 100%;
-    height: 100%;
-    background: url("./a.png") no-repeat;
+    width: 195px;
+    height: 42px;
+    background: url("../images/logo.png") no-repeat;
     text-indent: -999px; /*隐藏链接里面的文字*/
     overflow: hidden;  /*这句话加上想必也是极好的*/
 }
@@ -44,9 +42,8 @@ nav li a:hover {
 .search {
     width: 410px;
     height: 40px;
-    background-color: green;
     float: left;
-    margin-left: 50px;
+    margin-left: 160px;
 }
 .search input {
     width: 361px;
@@ -62,5 +59,157 @@ nav li a:hover {
     border: 0;
     outline: none;
     float: left;
-    background: url('../image/b.png') no-repeat;
+    background: url('../images/fa-search.png') no-repeat;
+}
+.personal {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.personal dt, .personal dd {
+    float: left;
+}
+.personal s {
+    position: relative;
+    padding: 0 20px;
+    text-decoration: none;
+}
+.personal s::before {
+    content: '';
+    display: block; /*因为伪元素的是行内元素*/
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.personal span img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*banner部分*/
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+.inner {
+    height: 420px;
+    position: relative;
+}
+.subnav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 190px;
+    background: rgba(0, 0, 0, .3);
+    padding-top: 30px;
+}
+.subnav li {
+    padding-left: 20px;
+    position: relative;
+    height: 40px;
+}
+.subnav a {
+    font-size: 14px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+.subnav a:hover {
+    color: #00b4ff;
+}
+.subnav span {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.circle {
+    width: 176px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    /*margin-left: -88px;*/
+    transform: translateX(-50%);
+    bottom: 15px;
+}
+.circle i {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: rgba(255, 255, 255, .3);
+    margin: 0 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .4s;
+}
+.circle i:hover {
+    width: 20px;
+    background-color: #ffffff;
+}
+.timebook {
+    width: 228px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /*transform: translate(50%, -50%);*/
+    background-color: #fff;
+}
+.timebook dt{
+    height: 50px;
+    background-color: #9bceea;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+.timebook dd {
+    padding: 15px 20px 0;
+}
+.timebook dd li {
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.timebook dd li:last-child {
+    border: 0;
+}
+.timebook li h5:hover {
+    color: #00a4ff;
+}
+.timebook li p:hover {
+    color: #00a4ff;
+}
+.timebook h5 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #4e4e4e;
+}
+.timebook span {
+    font-size: 14px;
+}
+.timebook p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.allcourse {
+    height: 40px;
+    border: 1px solid #22b0ff;
+    color: #22b0ff;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+.allcourse:hover {
+    background-color: #22b0ff;
+    color: #ffffff;
 }
