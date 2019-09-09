@@ -6,6 +6,7 @@ window.onload = function () {
     /* 3. 倒计时 */
     downTime();
 };
+/* 顶部搜索 */
 var search = function () {
     /* 1.默认固定顶部透明背景 */
     let searchBox = document.querySelector('.jd_search_box');
@@ -30,6 +31,7 @@ var search = function () {
         searchBox.style.background = 'rgba(201, 21, 35, ' + opacity + ')';
     }
 };
+/* 轮播图 */
 var banner = function () {
     /* 1. 自动轮播且无缝 （定时器，过渡） */
     /* 2. 点要随着图片的轮播而改变 （根据索引切换） */
@@ -170,6 +172,32 @@ var banner = function () {
         setTime();
     });
 };
+/* 倒计时 */
 var downTime = function () {
+    /* 倒计时的时间 */
+    let time = 2*60*60; /* 两小时 */
+    /* 时间盒子 */
+    let spans = document.querySelector('.sk_time').querySelectorAll('span');
+    /* 每一秒去更新显示的时间 */
+    let timer = setInterval(function (){
+        time --;
+        /* time 格式还是秒需要转换 */
+        /* Math.floor 函数取整 */
+        let h = Math.floor(time/3600); /* 3600 秒等于 1 小时 */
+        let m = Math.floor(time%3600/60); /* 60 秒等于 1 分钟 */
+        let s = time%60;
 
+        spans[0].innerHTML = Math.floor(h/10);
+        spans[1].innerHTML = h%10;
+
+        spans[3].innerHTML = Math.floor(m/10);
+        spans[4].innerHTML = m%10;
+
+        spans[6].innerHTML = Math.floor(s/10);
+        spans[7].innerHTML = s%10;
+
+        if (time <= 0 ) {
+            clearInterval(timer);
+        }
+    }, 1000);
 };

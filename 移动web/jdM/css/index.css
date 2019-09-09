@@ -183,7 +183,7 @@ body {
 }
 
 /* 秒杀 */
-.sk .icon{
+.sk .sk_icon{
     width: 16px;
     height: 20px;
     float: left;
@@ -191,17 +191,17 @@ body {
     margin-top: 7px;
     background: url("../images/seckill-icon.png") no-repeat center/16px 20px;
 }
-.sk .name{
+.sk .sk_name{
     float: left;
     margin-left: 10px;
     font-size: 16px;
     color: #d8505c;
 }
-.sk .time{
+.sk .sk_time{
     float: left;
     margin-left: 10px;
 }
-.sk .time span{
+.sk .sk_time span{
     float: left;
     width: 16px;
     height: 16px;
@@ -212,7 +212,7 @@ body {
     margin-left: 3px;
     margin-top: 9px;
 }
-.sk .time span:nth-child(3n){
+.sk .sk_time span:nth-child(3n){
     background: #fff;
     width: 3px;
     color: #333;
