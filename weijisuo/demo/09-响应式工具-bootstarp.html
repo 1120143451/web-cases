@@ -1,0 +1,59 @@
+<!-- h5 文档申明 -->
+<!DOCTYPE html>
+<!-- 文档语言申明 en zh-CN zh-tw -->
+<html lang="zh-CN">
+<head>
+    <!-- 文档编码 -->
+    <meta charset="utf-8">
+    <!-- 要求当前网页使用浏览器最高版本的内核来渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口的设置：视口的宽度和设备一直，默认的缩放比例和 PC 端一致， 用户不能自行缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>title</title>
+
+    <!-- Bootstrap -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .container{
+            height: 100px;
+            background: #fc1;
+        }
+        .container-fluid{
+            height: 100px;
+            background: #269abc;
+        }
+    </style>
+</head>
+<body>
+<!--
+    大屏设备    显示
+    中屏设备    隐藏
+    小屏设备    显示
+    超小屏设备   隐藏
+    visible-lg  大屏显示其他隐藏
+    visible-md  中屏显示其他隐藏
+    visible-sm  小屏显示其他隐藏
+    visible-xs  超小屏显示其他隐藏
+    3.2 版本后 建议使用 hidden
+    hidden-lg  大屏显示其他隐藏
+    hidden-md  中屏显示其他隐藏
+    hidden-sm  小屏显示其他隐藏
+    hidden-xs  超小屏显示其他隐藏
+-->
+<!--<div class="box visible-lg visible-sm">内容</div>-->
+<div class="box hidden-md hidden-xs">内容</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../lib/jquery/jquery-3.4.1.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
