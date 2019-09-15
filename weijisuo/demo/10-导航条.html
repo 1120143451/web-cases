@@ -1,0 +1,76 @@
+<!-- h5 文档申明 -->
+<!DOCTYPE html>
+<!-- 文档语言申明 en zh-CN zh-tw -->
+<html lang="zh-CN">
+<head>
+    <!-- 文档编码 -->
+    <meta charset="utf-8">
+    <!-- 要求当前网页使用浏览器最高版本的内核来渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口的设置：视口的宽度和设备一直，默认的缩放比例和 PC 端一致， 用户不能自行缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>title</title>
+
+    <!-- Bootstrap -->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- navbar 导航模块  navbar-default 默认样式导航 -->
+<nav class="navbar navbar-default">
+    <!-- 导航的内容容器 -->
+    <div class="container">
+        <!-- 包含 商标区域 和 切换按钮（在移动端显示） -->
+        <div class="navbar-header">
+            <!-- 切换按钮 -->
+            <!--
+            类名：collapsed 样式
+            属性：
+                data-toggle="collapse" 申明是折叠组件
+                data-target="#bs-example-navbar-collapse-1" 通过选择器控制的目标元素
+            其他：
+                aria-expanded="false" aria-* 代表提供给屏幕阅读器使用的（盲人阅读器）
+                class="sr-only" screen read only 代表提供给屏幕阅读器使用的（盲人阅读器）
+            -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- 商标区域 -->
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- 导航链接 表单 其他内容 被切换 -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- 默认的导航 -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <!-- 右对齐的导航 -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../lib/jquery/jquery-3.4.1.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

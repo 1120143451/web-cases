@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        /* 假设的设备 320px 414px 640px */
+        @media (min-width: 320px) {
+            html{
+                font-size: 50px;
+            }
+        }
+        @media (min-width: 414px) {
+            html{
+                font-size: 64.6875px;
+            }
+        }
+        @media (min-width: 640px) {
+            html{
+                font-size: 100px;
+            }
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            line-height: 1;
+            font-size: 14px;
+        }
+        /* 流式容器 */
+        header{
+            width: 100%;
+            height: 1rem;
+            font-size: 0.32rem;
+            text-align: center;
+            line-height: 1rem;
+            background: green;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<!--
+学过的适配：
+1. 伸缩布局 flex
+2. 流式布局 百分比
+3. 响应布局 媒体查询（超小屏设备的时候：流式布局）
+共同点：元素只能做宽度的适配（排除图片）
+-->
+<!-- 适配方案 rem：宽度和高度都能做到适配（等比缩放） -->
+<!-- 4.rem 布局 -->
+<!-- 通过控制 html 上的字体大小去控制页面上所有已 rem 为单位的基准值控制尺寸 -->
+<!-- 4.1 把页面上 px 单位转换成 rem 单位 -->
+<!-- 4.2 页面制作的时候 psd 上的量取的 px 转成 rem 使用 -->
+<!-- 4.3 怎么换算？？预设一个基准值方便计算，假设 100px -->
+<!-- 4.4 适配的时候设置基准值，假设 320px 基准值为 50px，怎么算（640px 100px === 320px 50px） -->
+<!-- 4.5 换算公式：当前 rem 基准值 = 预设的基准值 / 设计稿宽度 * 当前设备的宽度 -->
+<!-- 4.6 怎么去改变基准值？（js换算，媒体查询(推荐)） -->
+<header>购物车</header>
+</body>
+</html>

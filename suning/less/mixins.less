@@ -1,0 +1,12 @@
+// less 没有循环语法
+// 解决：使用函数的带条件迭代（根据数组的长度停止当前循环）
+// 给函数的执行附加条件
+// 需要序号来判断  通过序号遍历 @index 1 开始
+.adapterMixin(@index) when ( @index > 0){
+  @media (min-width: extract(@adapterDeviceList, @index)) {
+    html {
+      font-size: @baseFontSize/@psdWidth*extract(@adapterDeviceList, @index);
+    }
+  }
+  .adapterMixin( @index - 1);
+}

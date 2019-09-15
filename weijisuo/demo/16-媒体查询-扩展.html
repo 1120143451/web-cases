@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 100%;
+        height: 1000px;
+        margin: 0 auto;
+        background: blue;
+    }
+
+    @media (min-width: 768px) {
+        .container{
+            width: 750px;
+            background-color: green;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .container{
+            width: 970px;
+            background-color: red;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container{
+            width: 1170px;
+            background-color: yellow;
+        }
+    }
+
+</style>
+<body>
+<!--
+响应式容器：
+1. 在超小屏（768px 以下）的时候：当前容器的宽度 100% 背景蓝色
+2. 在小屏设备（768px-992px）的时候: 当前容器的宽度 750px 背景绿色
+3. 在中屏设备（992px-1200px）的时候: 当前容器的宽度 970px 背景红色
+4. 在大屏设备（1200px 以上）的时候: 当前容器的宽度 1170px 背景黄色
+-->
+<div class="container"></div>
+</body>
+</html>
